@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "0826816d-8397-4ae8-9d6c-f1cc5d7ec853",
+		"name": "ConsultaCreditoSanborns",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://credito.sanborns.com.mx/Balance/Balance?token=NDcxNzAyNDY0ODA0",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "_gcl_au=1.1.2053802553.1638894627; _fbp=fb.2.1638894628967.763483491; scarab.visitor=%2271409C2AF5F08877%22; __gads=ID=fb3977f8b29221c9:T=1638894668:S=ALNI_MZPDK9in4tLAM3gUsk970sje1S3zw; _hjSessionUser_1452381=eyJpZCI6IjRiOWI3OWQxLTI3ODAtNWU5NS1iMjRjLTdmOWE0ZWY3ODY1OSIsImNyZWF0ZWQiOjE2Mzg4OTQ2MzA2MjksImV4aXN0aW5nIjp0cnVlfQ==; _ga=GA1.4.1508130688.1638894629; _gaexp=GAX1.3.aT7-OIyrToWtMlJBdpvrUg.19041.1; _gid=GA1.3.2072907493.1641830215; _gid=GA1.4.2072907493.1641830215; bm_sz=C437015750313E59AE40D64D14500E94~YAAQhtL3vQLFKp59AQAAXGjNSQ58DFK9VJX5PrWUBP4ntDwn0/rPHXqb4WFWm+gLx8hNLvf2BTq8UWQZw1cU5Poaoz8enxxO7bmQ8gDfu0VQPz/iLw/V2ziEv2sjysS8tu3GanMJZNlIP/KOxa5JLTVW1Lr2v+vcjATpcKHCoV2QN3TncrAkAPAH+yuHO9/R8c3ldG0AXv7cFTgHma5z85e6nWthJKhYoXMJr0oIPdu21fN64wYHLQFqdS7bq+VFYoiP1g2m5KGYgkLOmTimeh5BU0E6ym+I+KDCFPTW+o0qo3jUefE4Kw==~3748165~3359797; _hjSession_1452381=eyJpZCI6IjE3M2ZiODg3LWIzODItNDk1NS1hMWEwLWRhMTBhODdjYzgxMyIsImNyZWF0ZWQiOjE2NDE5MTU3MTczNzUsImluU2FtcGxlIjp0cnVlfQ==; _hjAbsoluteSessionInProgress=1; ASP.NET_SessionId=msnexx1bx3aton4us4qgwjnh; __RequestVerificationToken=U2R0mcIOj5xix-_9mEtylC47S-JC4QBD2Qcs1_7ZGzquOBIGIZgHg5TwF8V7Zw3-J87f4PCsL7OmRDX-CSDuctA4ckBY-sAY0mPk5i8l0e41; scarab.mayAdd=%5B%7B%22i%22%3A%22149696%22%7D%2C%7B%22i%22%3A%22124763%22%7D%2C%7B%22i%22%3A%22196155%22%7D%5D; mp_4c18e8c2ebdb0ef0b17cc4d985c295d7_mixpanel=%7B%22distinct_id%22%3A%20%2217e4a007d69e59-08b81604352c98-4303066-100200-17e4a007d6a116b%22%2C%22%24device_id%22%3A%20%2217e4a007d69e59-08b81604352c98-4303066-100200-17e4a007d6a116b%22%2C%22utm_source%22%3A%20%22Optimize%22%2C%22utm_medium%22%3A%20%22Direct%22%2C%22utm_campaign%22%3A%20%22Farmacia_al31_22%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fwww.sanborns.com.mx%2F%22%2C%22%24initial_referring_domain%22%3A%20%22www.sanborns.com.mx%22%2C%22width%22%3A%201366%2C%22height%22%3A%20560%2C%22store%22%3A%20%22farmacia.sanborns.com.mx%22%2C%22storeUrl%22%3A%20%22farmacia.sanborns.com.mx%22%2C%22path%22%3A%20%22%2Fpedir%2F%22%7D; ak_bmsc=6C899E14FB51D8F4EAA4CCB7A14EC98E~000000000000000000000000000000~YAAQVwrorJwjI559AQAAJqNDSg64IIJa5rJILu3UeuXIrVS8Xegp8sk/y6GOdDBI/dF30QTOAgEqNV6hmEqTmZ1RE1CFRQ9YCpb9YFPV92dQjeRz9FYAON6Lf30PQCz8OTmVb39f2gYfypwzsyZIQZsICvIZ0h3ao2+lb3hEymQahEkYGXLdx7IvF5+Ts2+2AQ073OyI1ZZsLkm2c61flFoamktT4hC6I8H/0GHafmBtBRcc/3g4/RP+Hdpehk3kwZEm2HBolpdImhLci8ybf5JRcBk1qC/2joWBo6UxhTghIDscAR/RPP/w4utii3AvTkmCzAJJUsUhfYotGrE3J7Or8t/6S6DPuRPB/ZN/qFzYbuNZQHbgNk9iUoGKMXEPaFPXPHSRmAVHopFjc6wj8A==; _abck=0BDD1B6A457421437066B7DA78D252A8~0~YAAQVwrorJ0jI559AQAAmadDSgewnA3dDa1Yn3+uMjizhIAxVhJ3coAg6khoCfBlIsVqgeBGeNlvlL7rsc2kS5fAojy4oNYr946FN6EcYkmJBVbyz0joE/glbXOzxhkM7GhTvMDbfHbC7ILtJ7969xpetYboTUiDU7WzvgWP1I3fTyQ/+6C0CArx3VGvsg48B35CsCN+jNduIJaMjqXUgDSKu7pzocT8Hvbh6PqPr3TFsiye2v9Dw7GYVT7nxKW1HtKm7iqcNl2UQuC3aTN4nXDVNO0N7d/sXeX5Z/W5CiyhR5irpuh+mXK854cL7KRIlGRu7oZOHMXprV8n7nkgE/gNeluyJb9vdygSQZPMR8nBgczyV9gviWOdpAOYDC8ictj8rewYnKbfD8lyv1uvP70VNf/DIb8GeM7cM0U=~-1~-1~-1; _hjIncludedInSessionSample=1; _gcl_aw=GCL.1641924481.Cj0KCQiA8vSOBhCkARIsAGdp6RQrlm_EgCyGXKW_PgarOMFNpdOZzgu-uywR17zaVeTcJFD3wEnHbwwaAtq8EALw_wcB; _gac_UA-738463-25=1.1641924482.Cj0KCQiA8vSOBhCkARIsAGdp6RQrlm_EgCyGXKW_PgarOMFNpdOZzgu-uywR17zaVeTcJFD3wEnHbwwaAtq8EALw_wcB; _gac_UA-69122442-17=1.1641924482.Cj0KCQiA8vSOBhCkARIsAGdp6RQrlm_EgCyGXKW_PgarOMFNpdOZzgu-uywR17zaVeTcJFD3wEnHbwwaAtq8EALw_wcB; _gac_UA-738463-25=1.1641924482.Cj0KCQiA8vSOBhCkARIsAGdp6RQrlm_EgCyGXKW_PgarOMFNpdOZzgu-uywR17zaVeTcJFD3wEnHbwwaAtq8EALw_wcB; _gac_UA-69122442-17=1.1641924482.Cj0KCQiA8vSOBhCkARIsAGdp6RQrlm_EgCyGXKW_PgarOMFNpdOZzgu-uywR17zaVeTcJFD3wEnHbwwaAtq8EALw_wcB; bm_sv=AD7F69B720CB89C5A0D9090ED310B8C2~ITNNbj8z8d07d98L4EdYgbgFuGssz84X31te/oVKoU3rDJ4CZIzCj/nFCmbQ4Hq/F+TSI4nqVIBDWLCnqMlDZa9/ZxVxw8QdaKWoja2UUQ1j3y6JsdXa59X/1SKUd4K6VfY//c2cWe6Fn4nE2kFlbjSRFAR2x7K+ilcBrPw2Lus=; _ga=GA1.1.1508130688.1638894629; _ga_0EZF0L5H5D=GS1.1.1641921573.32.1.1641925917.0; _ga_9JTKT3F2ZS=GS1.1.1641921573.32.1.1641925917.0"
+					}
+				],
+				"url": {
+					"raw": "https://credito.sanborns.com.mx/Balance/Balance?token=NDcxNzAyNDY0ODA0",
+					"protocol": "https",
+					"host": [
+						"credito",
+						"sanborns",
+						"com",
+						"mx"
+					],
+					"path": [
+						"Balance",
+						"Balance"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "NDcxNzAyNDY0ODA0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
